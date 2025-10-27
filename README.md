@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🛍️ OmniMart - Full Stack E-Commerce Website
+
+OmniMart is a **Next.js full-stack eCommerce platform** that includes both customer and admin interfaces.  
+It features authentication, product management, order tracking, and image hosting — all powered by **Next.js 14**, **MongoDB**, **Clerk**, **Cloudinary**, and **Inngest**.
+
+---
+
+## Features
+
+- Built with **Next.js 14 + Tailwind CSS + ShadCN UI**
+- Secure **user authentication** with Clerk
+- **Admin dashboard** for managing products and orders
+- **Cloudinary** integration for image uploads
+- **MongoDB** database with Mongoose models
+- **Inngest webhooks** for background jobs
+- **Deployed on Vercel** for fast and scalable hosting
+
+---
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+   ```bash
+   git clone https://github.com/Arindamsky/Omnimart
+   cd OmniMart
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+   ```bash
+   npm install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Create a `.env.local` file in the root directory and add:
 
-## Learn More
+   ```bash
+   MONGODB_URI=your_mongodb_connection_string
+   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+   CLERK_SECRET_KEY=your_clerk_secret_key
+   CLOUDINARY_CLOUD_NAME=your_cloud_name
+   CLOUDINARY_API_KEY=your_api_key
+   CLOUDINARY_API_SECRET=your_api_secret
+   INNGEST_API_KEY=your_inngest_key
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Run locally
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   npm run dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Frontend:** Next.js 14, Tailwind CSS, ShadCN UI
+- **Auth:** Clerk
+- **Database:** MongoDB (Mongoose)
+- **Image Hosting:** Cloudinary
+- **Webhooks / Background Jobs:** Inngest
+- **Deployment:** Vercel
+
+---
+
+## Folder Structure
+
+OmniMart/
+├── app/ # Next.js App Router pages
+├── components/ # Reusable UI components
+├── lib/ # Configs (db, clerk, inngest)
+├── models/ # MongoDB schemas
+├── public/ # Static assets
+└── utils/ # Helper functions
+
+---
+
+## Developer
+
+**Name:** Arindom Saikia  
+**Project:** Full Stack E-Commerce (OmniMart)  
+**Year:** 2025  
+**GitHub:** [github.com/Arindamsky](https://github.com/Arindamsky)
+
+---
+
+## License
+
+This project is licensed under the **MIT License**.
+
+---
+
+ ⚡ OmniMart — Modern, Secure & Scalable eCommerce built with Next.js.
