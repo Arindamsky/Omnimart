@@ -65,17 +65,7 @@ It features authentication, product management, order tracking, and image hostin
 
 ---
 
-## Folder Structure
 
-OmniMart/
-├── app/ # Next.js App Router pages
-├── components/ # Reusable UI components
-├── lib/ # Configs (db, clerk, inngest)
-├── models/ # MongoDB schemas
-├── public/ # Static assets
-└── utils/ # Helper functions
-
----
 
 ## Developer
 
